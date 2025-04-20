@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunal Chauhan | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body onload="initializeDarkMode()">
+    <!-- Dark Mode Toggle Button -->
+    <div id="dark-mode-toggle" class="dark-mode-toggle">
+        <label class="switch">
+            <label for="darkModeCheckbox" class="visually-hidden">Toggle Dark Mode</label>
+            <input type="checkbox" id="darkModeCheckbox" onclick="toggleDarkMode()" />
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Kunal Chauhan</a></h1>
+            <p>Innovative Software Developer | Problem Solver | Tech Enthusiast</p>
+            <a href="#projects" class="btn">Explore My Work</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a motivated BTech CSE student with a strong passion for leveraging technology to build innovative and impactful software solutions. 
+                With a focus on Artificial Intelligence, Web Development, and problem-solving,
+                I am driven by the challenge of creating systems that make a difference in the real world.
+                My curiosity and dedication to continuous learning have helped me stay ahead in a rapidly evolving tech landscape. 
+                I thrive on transforming complex ideas into functional applications, and I am committed to growing both as a developer and a professional.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Backend</h3>
+                    <p>Python, Node.js, Flask</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Databases</h3>
+                    <p>MongoDB, SQL</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Soft Skills</h3>
+                    <p>Teamwork, Communication, Problem Solving</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Burger Bot</h3>
+                <p>An AI-powered chatbot for ordering burgers, built with Python, Flask, and OpenAI API.</p>
+                <a href="https://github.com/burgerbeast7/project-burger" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>IPO Web App</h3>
+                <p>A React-based web application that displays IPO details using Django REST API.</p>
+                <a href="https://github.com/kunalchauhan/ipo-web-app" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+<!-- Download Resume Section -->
+<section id="download-resume" class="section">
+    <div class="container">
+        <h2>Download My Resume</h2>
+        <p>Click below to download my resume in PDF format.</p>
+        <a href="C:\Users\kunal\Downloads\KUNAL CHAUHAN.pdf" download="C:\Users\kunal\Downloads\KUNAL CHAUHAN.pdf" class="btn">Download Resume</a>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            
+            <form action="https://formsubmit.co/KUNALCHAUHAN91837@gmail.com" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required class="form-input" />
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required class="form-input" />
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required class="form-textarea"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kunal Chauhan | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+<script>
+    // Function to initialize dark mode based on user preference
+    function initializeDarkMode() {
+        const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
+        document.body.classList.toggle('dark-mode', darkModeEnabled);
+        document.getElementById('darkModeCheckbox').checked = darkModeEnabled;
+    }
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+        const isChecked = document.getElementById('darkModeCheckbox').checked;
+        document.body.classList.toggle('dark-mode', isChecked);
+        localStorage.setItem('darkMode', isChecked);
+    }
+</script>
+</body>
+</html>
