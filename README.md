@@ -16,22 +16,8 @@ To create a responsive and personal portfolio website showcasing my skills, proj
 ## 🛠 Tech Stack
 - HTML
 - CSS
-- (Optional JS for interactivity)
+- js
 
-## ▶️ How to Run
-1. Clone this repo:
-```
-git clone https://github.com/your-username/portfolio-website-growthlink.git
-```
-2. Install dependencies:
-```
-npm install
-```
-3. Start the development server:
-```
-npm start
-```
-4. Open your browser and visit http://localhost:3000 to view the portfolio website.
 
 ## 📝 About Me
 - Name: kunal chauhan
