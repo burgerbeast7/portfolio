@@ -43,7 +43,7 @@ To create a professional portfolio website that serves as an online resume. The 
 
 ## Folder Structure
 
-/Portfolio/ │ ├── index.html          # Main HTML file ├── style.css           # Custom CSS styling ├── script.js           # JavaScript (if any) ├── /images/            # Assets and images used
+/Portfolio/ │ ├── index.html          # Main HTML file ├── style.css           # Custom CSS styling ├── script.js           # JavaScript 
 
 
 
