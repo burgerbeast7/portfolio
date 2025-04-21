@@ -45,11 +45,8 @@ To create a professional portfolio website that serves as an online resume. The 
 
 /Portfolio/ │ ├── index.html          # Main HTML file ├── style.css           # Custom CSS styling ├── script.js           # JavaScript (if any) ├── /images/            # Assets and images used
 
----
 
-## Screenshots
 
-*(Add screenshots here if needed to demonstrate UI responsiveness and design)*
 
 ---
 
